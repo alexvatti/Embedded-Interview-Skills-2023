@@ -61,7 +61,7 @@ Achivements- Profiles
 4. Github - [https://github.com/](https://github.com/alexvatti)
  
  
-Embedded Systems - Interview Syllabus (Chat GPt)
+Embedded Systems - Interview Syllabus (Chat GPT)
 ================================================
 The syllabus for an interview for an Embedded Systems position can vary depending on the specific job requirements and responsibilities. 
 However, some topics that are commonly covered in an Embedded Systems interview include:
@@ -86,6 +86,40 @@ Candidates should be prepared to discuss their role in the project, the challeng
 
 These are just a few of the topics that may be covered in an interview for an Embedded Systems position. Candidates should also be prepared
 to answer general questions about their education, work experience, and problem-solving skills, as well as questions specific to the company or organization they are applying to.
+
+Embedded  Linux Systems - Interview Syllabus (Chat GPT)
+======================================================
+
+The syllabus for an interview for an Embedded Linux Systems position can vary depending on the specific job requirements and responsibilities. 
+However, some topics that are commonly covered in an Embedded Linux Systems interview include:
+
+Linux Fundamentals: Candidates should have a good understanding of Linux operating system concepts such as 
+system calls, processes, threads, signals, and file systems. They should also have experience with Linux shell scripting, utilities, and commands.
+
+Device Drivers: Knowledge of device drivers is important for an Embedded Linux Systems position. 
+Candidates should have experience with device driver development, including interrupt handling, memory-mapped I/O, and kernel modules.
+
+Board Bring-up: Candidates should be familiar with the process of board bring-up, which involves 
+booting and configuring Linux on a new hardware platform. They should have experience with U-Boot bootloader and device tree configuration.
+
+Embedded Systems Programming: Candidates should have experience with programming embedded systems in C or C++, 
+and should be able to write efficient and optimized code. They should also be familiar with cross-compilation and debugging tools such as GDB and JTAG.
+
+Networking: Knowledge of networking concepts is essential for an Embedded Linux Systems position. 
+Candidates should have experience with network protocols such as TCP/IP, UDP, and HTTP, and should be able to configure and troubleshoot network interfaces and routing tables.
+
+Linux System Administration: Candidates should have experience with Linux system administration tasks such as user management, 
+package management, and system monitoring. They should also be familiar with basic security concepts such as user permissions and file system access control.
+
+These are just a few of the topics that may be covered in an interview for an Embedded Linux Systems position. 
+Candidates should also be prepared to answer general questions about their education, work experience, and problem-solving skills, 
+as well as questions specific to the company or organization they are applying to.
+
+
+
+
+
+
 
 
 
