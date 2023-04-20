@@ -8,7 +8,7 @@ Embedded-Interview-Skills-2023
 2. Vision - "Empowering and achieving the Dream Career"
 3. Values  - "Growth mindset, Passion, Resilience, Self-awareness, Empathy, Collaboration"
 
-
+![alt text](https://[image-url.com/image.jpg](https://assets-global.website-files.com/5a25950a9058c30001ce33a9/63c054647341c827a5031e74_MVVArrows_Revised.jpg)
 
 C - Language
 ============
