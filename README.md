@@ -1,6 +1,14 @@
 # Embedded-Interview-Skills-2023
+
+
 Embedded-Interview-Skills-2023
 ===============================
+
+1. Mission -"Sharing,Caring and Growing"
+2. Vision - "Empowering and achieving the Dream Career"
+3. Values  - "Growth mindset, Passion, Resilience, Self-awareness, Empathy, Collaboration"
+
+
 
 C - Language
 ============
@@ -51,4 +59,6 @@ Achivements- Profiles
 2. LinkedIn - https://www.linkedin.com/in/alex-reddy-machine-vision/
 3. Kaggle - https://www.kaggle.com/alexreddy/code
 4. Github - [https://github.com/](https://github.com/alexvatti)
+ 
+ 
  
