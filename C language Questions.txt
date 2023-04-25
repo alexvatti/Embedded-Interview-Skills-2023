@@ -1,0 +1,740 @@
+
+Prepare for the interview.
+
+Mock Interview
+Consider doing a practice interview with friends or family members (especially if they have experience interviewing employees themselves). 
+The practice will be helpful and give you more confidence. Ask for feedback on your answers, your body language, and your preparedness. 
+Have the mock interviewer ask both common questions as well as offbeat ones to see how well you can think on your feet.
+
+Taking the time to review typical interview questions will help give you a framework for your responses. 
+It will also reduce stress because you won't be scrambling for an answer during the interview. 
+Practice interviewing with a friend or family member ahead of time, and it will be much easier when you're actually in a job interview.
+
+
+Confusing / Tricky:  C language Questions:
+
+1. What is the output?
+#include<stdio.h> 
+int main() 
+{ 
+	int i=5; 
+	i = i+++i;  
+         printf("Value of i=%d\n",i); 
+	return 0; 
+} 
+
+
+2. What is the output?
+#include<stdio.h> 
+int main() 
+{ 
+	char *ptr1="hello",*ptr2; 
+	ptr2=ptr1; 
+         ptr1="world"; 
+	printf("ptr1=%s ptr2=%s\n",ptr1,ptr2); 
+	return 0; 
+} 
+
+3. What is the output?
+#include<stdio.h> 
+int main() 
+{ 
+	int i=2; 
+	i=++2;  
+	printf("value of i=%d\n",i); 
+	return 0; 
+} 
+
+4. What is the output?
+#include<stdio.h> 
+int main() 
+{ 
+	int i=10; 
+	i*=10+1;  //110
+	printf("value of i=%d\n",i); 
+	return 0; 
+} 
+
+5. What is the output?
+#include<stdio.h> 
+int main() 
+{ 
+	int i=(1,2,3,4,5,6,7,8,9,10);  
+	int j; 
+	j=1,2,3,4,5,6,7,8,9,10;  
+	printf("value of i=%d\n",i); 
+	printf("value of j=%d\n",j); 
+	return 0; 
+} 
+
+6. What is the output?
+#include<stdio.h> 
+int main() 
+{ 
+	int i=10; 
+	while(i<=15,i<=20) {   
+		printf("value of i=%d\n",i); 
+		i++; 
+	} 
+	return 0; 
+} 
+
+7. What is the output?
+#include<stdio.h> 
+
+int main() 
+{ 
+	int i=10; 
+	while(i++<15);  
+	{ 
+		printf("value of i=%d\n",i); 
+	} 
+	return 0; 
+} 
+
+8. What is the output?
+#include<stdio.h> 
+int main() 
+{ 
+	int i=10,j=20,k=30; 
+	printf("%d%d\b\b\b\b%d",i,j,k); 
+	return 0; 
+} 
+
+9. What is the output?
+#include<stdio.h> 
+int main() 
+{ 
+	int i=10; 
+	int *ptr=&i; 
+	scanf("%d",ptr); 
+	printf("the value of i=%d\n",i); 
+	return 0; 
+} 
+
+10. What is the output?
+#include<stdio.h> 
+
+int main() 
+{ 
+	printf("value of exp=%d\n",5%2);  
+	printf("value of exp=%d\n",-5%2);  
+	printf("value of exp=%d\n",5%-2);  
+	printf("value of exp=%d\n",-5%-2);  
+	return 0; 
+}
+11. What is the output?
+
+#include<stdio.h> 
+void f() 
+{ 
+    	printf("Hello\n"); 
+} 
+ 
+void main() 
+{ 
+	 ; 
+}
+
+
+12. What is the output?
+
+#include<stdio.h> 
+
+void main() 
+{ 
+   int x = 5; 
+   
+   if(x=5) 
+   {	 
+       if(x=5) break;  
+       printf("Hello"); 
+   } 
+   printf("Hi"); 
+}
+
+13. What is the output?
+
+#include<stdio.h> 
+int main() 
+{ 
+   const int x = 5; 
+   
+   const int *ptrx; 
+   ptrx = &x; 
+   *ptrx = 10;  
+   printf("%d\n", x); 
+   return 0; 
+}
+
+14. What is the output?
+
+#include<stdio.h> 
+
+void main() 
+{ 
+   int x; 
+   float y; 
+   
+   y = x = 7.5;  
+   printf("x=%d y=%f", x, y); 
+}
+
+15. What is the output?
+
+#include<stdio.h> 
+
+void main() 
+{ 
+   int a[3] = {2,,1}; 
+   
+   printf("%d", a[a[0]]); 
+}
+
+16. What is the output?
+
+#include<stdio.h> 
+
+void main() 
+{ 
+   int a = 5, b = 3, c = 4; 
+   
+   printf("a = %d, b = %d\n", a, b, c);  
+}
+
+
+17. What is the output?
+
+#include<stdio.h> 
+
+void main() 
+{ 
+   int x = 3; 
+   
+   x += 2; 
+   printf("%d\n", x);  
+   x =+ 2;  
+   printf("%d\n", x); 
+}
+
+
+18. what is the output?
+
+#include<stdio.h> 
+#include<string.h> 
+#include<stdarg.h> 
+
+int main() 
+{ 
+   struct abc{ 
+                int len; 
+                char *str; 
+        } ; 
+
+   struct abc student_name = {10,"Naveen"}; 
+   struct abc *ptr=&student_name;	 
+
+   ++ptr->len; 
+
+   printf("name=%s,len=%d\n",student_name.str,student_name.len); 
+   return 0; 
+}
+
+19. what is the output?
+
+#include<stdio.h> 
+#include<stdarg.h> 
+#include<string.h> 
+
+int main() 
+{ 
+	int a=3; 
+        switch(a) { 
+                printf("I will be executed allways\n");  
+                default: 
+                        printf("I am a default case , I am executed every time\n"); 
+                        break; 
+                case 1: 
+                        printf("I am :case 1\n"); 
+                        break; 
+                case 2: 
+                        printf("I am :case 2\n"); 
+                        break; 
+        } 
+}
+
+20. What is the output?
+
+#include<stdio.h> 
+#include<stdarg.h> 
+#include<string.h> 
+
+int main() 
+{ 
+        int a[10]={0,2,3,4,5,6,7,8,9}; 
+        int *ptr1=&a; 
+        int *ptr2=&a; 
+        int *ptr3=&a; 
+
+	printf("Values=%d,%d,%d\n",*++ptr1,*ptr2++,++*ptr3);     
+}
+
+21.  What is the output ?
+
+#include<stdio.h> 
+#include<stdarg.h> 
+#include<string.h> 
+
+int add(int a,int b) 
+{ 
+	printf("i am in add function\n"); 
+	return (a+b); 
+} 
+int main() 
+{ 
+	void *ptr=add; 
+	printf("Sum of two variables=%d\n", ((int(*)(int,int))ptr)(10,20)); 
+}
+
+22. what is the output?
+
+#include<stdio.h> 
+#include<stdarg.h> 
+#include<string.h> 
+
+int main() 
+{ 
+	int num1,num2,total=0; 
+	 
+	printf("Enter two number :\n"); 
+	scanf("%d%d",&num1,&num2); 
+	 
+	while(num1 > 0) 
+	{ 
+		if(num1 & 1) { 
+			total+=num2; 
+		} 
+		num1=num1>>1; 
+		num2=num2<<1; 
+	} 
+	printf("output=%d\n",total); 
+}
+
+23. what is the output ?
+
+#include<stdio.h> 
+
+int main() 
+{ 
+	printf("hi") , printf("Hello"); 
+	return 0; 
+}
+
+24. what is the output?
+
+int main() 
+{ 
+        int i=5; 
+        i = ++i + ++i;   
+        printf("value=%d\n",i); 
+        return 0; 
+}
+
+25. what is the output?
+
+#include<stdio.h> 
+int main() 
+{ 
+        int a=5,b=3; 
+        printf("value=%x\n",-1<<4); 
+        return 0; 
+}
+
+26. what is the output?
+#include<stdio.h> 
+#include<limits.h> 
+int main() 
+{ 
+        char x=120; 
+        while(++x > 0) { 
+                printf("value x=%d\n",x); 
+        } 
+        return 0; 
+} 
+
+27. what is the output?
+#include<stdio.h> 
+int main() 
+{ 
+        int a=5,b=3; 
+        printf("value=%d\n",++(a*b+1)); 
+        return 0; 
+}
+
+28. what is the output?
+#include<stdio.h> 
+int main() 
+{ 
+        float f=3.14; 
+        printf("value=%f\n",f%2); 
+        return 0; 
+} 
+
+29. what is the output?
+#include<stdio.h> 
+#include<limits.h> 
+int main() 
+{ 
+        int a=4,b=5; 
+        b= a++ + a--;  
+        a= ++b + b--;  
+        printf("a=%d\n",a); 
+        printf("b=%d\n",b); 
+        return 0; 
+} 
+
+30. what is the output?
+#include<stdio.h> 
+void fun(int ); 
+int main() 
+{ 
+	int x=2; 
+	fun(x++); 
+	return 0; 
+} 
+void fun(int x) 
+{ 
+	printf("value=%d\n",x++); 
+} 
+
+31. what is the output?
+
+#include<stdio.h> 
+int main() 
+{ 
+	int i=5,j; 
+	j=(i=i+1,i=i+2,i+3); 
+	printf("values i and j = %d %d \n",i,j); 
+	return 0; 
+} 
+
+
+32. what is the output?
+int main() 
+{ 
+	int i=0; 
+	switch(i) { 
+		case 2+2: printf("four"); break; 
+		case 2/2: printf("one"); break; 
+		case 2-2: printf("zero"); break; 
+		case 2+1: printf("three"); break; 
+		default : printf("default\n"); break; 
+		 
+	} 
+	return 0; 
+}
+
+33. what is the output?
+
+#include<stdio.h> 
+int main() 
+{ 
+	int i=-5; 
+	i=~i; 
+	printf("value i = %d \n",i); 
+	return 0; 
+}
+
+34. what is the output?
+
+#include<stdio.h> 
+int main() 
+{ 
+	int x,y,z; 
+	x=0; y=1; 
+	z= x && ++y; 
+	printf("values x y z = %d %d %d\n",x,y,z); 
+	return 0; 
+} 
+
+35. what is the output?
+#include<stdio.h> 
+int main() 
+{ 
+	char ch=124; 
+	while(0 < ++ch) { 
+		printf("ch value= %d\n",++ch); 
+	} 
+	return 0; 
+}
+
+36. what is the output?
+#include<stdio.h> 
+int fun(int,int); 
+int main() 
+{ 
+	int i=5; 
+	fun(--i,i++); 
+	fun(++i,i--); 
+	return 0; 
+} 
+int fun(int x, int y) 
+{ 
+	printf("values x=%d y=%d\n",x++,y--); 
+	return 0; 
+}
+
+
+37. what is the output?
+#include<stdio.h> 
+int main(int argc, char *argv[]) 
+{ 
+        while(--argc > 0) { 
+
+                printf("%s\n",*++argv); 
+
+        } 
+        return 0; 
+}
+
+38. what is the output?
+printf("%c\n",(*++argv)[0]); 
+
+
+39. what is the output?
+printf("%c\n",**++argv); 
+
+
+40. what is the output?
+printf("%c\n",*++argv[1]); 
+
+
+41. what is the output?
+#include<stdio.h> 
+int main(int argc, char *argv[]) 
+{ 
+        printf(5+”Fascilile\n”);
+}
+
+42. what is the output?
+#include<stdio.h> 
+int main(int argc, char *argv[]) 
+{ 
+        printf(%c\n”,”abcedfgh”[4]);
+}
+
+
+43. what is the output?
+#include<stdio.h> 
+int main(int argc, char *argv[]) 
+{ 
+        char str[]=”peace”;
+	char *s=str;
+	printf(“%s\n”,s++ +3);
+	return 0;
+}
+
+Implementation : C language Questions:
+
+S.NO    Question
+1Write a Program to say little endian or big endian
+2.Write a Program to set bit,clear bit ,toggle bit and print bits...using the macro
+3.Write program to implement my/own printf function
+4. Write a Program to print “string reverse”  recursively
+5. Write a Program to show the difference between int (*p)[3]; vs int *p[3]
+6. Write a Program Given string is rotation of original string or not?
+7. Write a Program : I/P string: aaabbbcccddd     o/p: print:  a3b3c3d3
+8. Write a Program: initial string =He is good 
+		Reverse string =good is He
+9.Write a function[most effective] to count the numbers 1 in a given number
+10. Write a Program: number conversion:from decimal to hexa, decimal to oct, decimal to binary
+11. write a program to do the strcat operation 
+12.wrnite a program to do strtok operation
+13.write a program to do strstr operation 
+14. write a program to do strdup operation 
+15. write a program to do strchr operation 
+16. How do you swap nos without using third variable
+18. write a program to do strcmp, strncmp, memcmp operations
+19. write a program to do strcpy,memcpy on string and char array
+20. How to find the offset of variable in a given structure? (container_of) implementation
+How to find the address of structure base, if you are 
+given with variable/element address,which is inside of struct?
+
+
+Hacker Ranker : C language Questions:
+
+S.NO  Question  Link
+1  AND Product
+https://www.hackerrank.com/challenges/and-product/problem
+2 Flips the bits
+https://www.hackerrank.com/challenges/flipping-bits/problem
+3 Lonely Integer
+https://www.hackerrank.com/challenges/lonely-integer/problem
+4 MAX of xor
+https://www.hackerrank.com/challenges/maximizing-xor/problem
+5 Sum vs xor
+https://www.hackerrank.com/challenges/sum-vs-xor/problem
+6 Greatest xor
+https://www.hackerrank.com/challenges/the-great-xor/problem
+7 recursive-digit-sum
+https://www.hackerrank.com/challenges/recursive-digit-sum/problem
+8 jumping-on-the-clouds
+https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem
+9 jumping-on-the-clouds-revisited
+https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited/problem
+10 kangaroo
+https://www.hackerrank.com/challenges/kangaroo/problem
+11 lisa-workbook
+https://www.hackerrank.com/challenges/lisa-workbook/problem
+12 migratory-birds
+https://www.hackerrank.com/challenges/migratory-birds/problem
+13 strange-advertising
+https://www.hackerrank.com/challenges/strange-advertising/problem
+14 breaking-best-and-worst-records
+https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
+15 beautiful-days-at-the-movies
+https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem
+16 utopian-tree
+https://www.hackerrank.com/challenges/utopian-tree/problem
+17 circular-array-rotation
+https://www.hackerrank.com/challenges/circular-array-rotation/problem
+18 strange-code
+https://www.hackerrank.com/challenges/strange-code/problem
+19 funny-string/
+https://www.hackerrank.com/challenges/funny-string/problem
+20 greedy-florist
+https://www.hackerrank.com/challenges/greedy-florist/problem
+
+
+
+C language: Oral Questions:
+
+1)prototype of memory allocation functions 
+Information: 
+       1 	void * malloc (size_t) 	:  malloc (number *sizeof(int)); 
+       2 	void * calloc (size_t,size_t) 	:  calloc (number, sizeof(int)); 
+       3 	void * realloc (void*,size_t)   : realloc (pointer_name, number * sizeof(int)); 
+       4 	void free (void (*) :	free (pointer_name); 
+
+2) what is Callback Functions: 
+A callback function is a function that is called through a function pointer. 
+When you pass the pointer of a function as a parameter to another function, and when that pointer is used to call the function it points to a call back is made. 
+
+3) what is constant pointer [ it will hold only one assignment[address]] 
+
+A constant pointer is declared as follows : 
+<type of pointer> * const <name of pointer> 
+An example declaration would look like : 
+
+int * const ptr; 
+
+4) what is pointer to constant [we can assign the new address to pointer, but should not change the value] 
+
+const <type of pointer>* <name of pointer> 
+An example of definition could be : 
+const int* ptr; 
+
+5) what is constant pointer to constant [it will hold the address and value, both can not be altered] 
+const <type of pointer>* const <name of pointer> 
+for example : 
+const int* const ptr; 
+
+5)What is the difference between int (*p)[3]; vs int *p[3]; 
+	p=p+1==> int * 4  
+
+6) *ptr++ , (*ptr)++ what is the difference? 
+*ptr++ means ,Increment the Pointer not Value Pointed by It 
+
+++*ptr means ,Increment the Value being Pointed to by ptr (*ptr)++ 
+
+7) what is wild & dangling pointer?,how to avoid it in program? 
+Dangling pointer:Pointer assigned some memory and then free that memory. After freeing when not assigned to NULL 
+it still points to same memory address, such pointer are dangling pointer. 
+
+Wild pointer:Pointer which are not initialized during its definition holding some junk value( a valid address) are Wild pointer. 
+
+8) Size of data type depends on which compiler we use? 
+A) yes, for  gcc in 64bit machine gcc 4.9.2 version 
+char       -  1Byte [Independent of Compiler] 
+short int  - 2Byte 
+int        -  4Byte [Independent of Compiler , min 2, max 4] 
+float      - 4Byte [Independent of Compiler] 
+double     - 8Byte [Independent of Compiler] 
+Long double- 16Byte 
+
+char*      - 8Byte (for 64bit machine) 
+
+9)Representation of positive and negative numbers in C language/compiler? 
+
+There are three well known methods for representing negative values in binary: 
+
+Signed magnitude. This is the easiest to understand, because it works the same as we are  used to when dealing with negative decimal values: The first position (bit) represents the sign (0 for positive, 1 for negative), and the other bits represent the number. Although it is easy for us to understand, it is hard for computers to work with, especially when doing arithmetic with negative numbers. 
+   
+In 8-bit signed magnitude, the value 8 is represented as 0 0001000 and -8 as 1 0001000. 
+
+One's complement. In this representation, negative numbers are created from the corresponding positive number by flipping all the bits and not just the sign bit. This makes it easier to work with negative numbers for a computer, but has the complication that there are two distinct representations for +0 and -0. 
+ The flipping of all the bits makes this harder to understand for humans. 
+In 8-bit one's complement, the value 8 is represented as 00001000 and -8 as 11110111. 
+
+Two's complement. This is the most common representation used nowadays for negative integers because it is the easiest to work with for computers, but it is also the hardest to understand for humans. 
+When comparing the bit patterns used for negative values between one's complement and two's complement, it can be observed that the same bit pattern in two's complement encodes for the next lower number. 
+For example 11111111 stands for -0 in one's complement and for -1 in two's complement, and similarly for 10000000 (-127 vs -128). 
+    In 8-bit two's complement, the value 8 is represented as 00001000 and -8 as 11111000. 
+
+10)typedef vs #define 
+
+ #define is a C-directive which is also used to define the aliases for various data types similar to typedef  but with the following differences − 
+typedef is limited to giving symbolic names to types only where as #define can be used to define alias 
+	for values as well, q., you can define 1 as ONE etc. 
+ typedef interpretation is performed by the compiler whereas #define statements are processed by the pre-processor. 
+
+11)stack underflow - 
+Computer Definition. An error condition that occurs when an item is called for from the stack, but the stack is empty. Contrast with stack overflow. 
+
+Now that we have a basic picture in mind of what a stack conceptually looks like, we can define what underflow and overflow are. 
+Stack underflow happens when we try to pop (remove) an item from the stack, when nothing is actually there to remove. 
+This will raise an alarm of sorts in the computer, because we told it to do something that cannot be done. 
+
+Stack overflow happens when we try to push one more item onto our stack than it can actually hold. You see, the stack usually can only hold so much stuff. Typically, we allocate (set aside) where the stack is going to 
+be in memory and how big it can get. So, when we stick too much stuff there or try to remove nothing, we will generate a stack overflow condition or stack underflow condition, respectively. 
+
+12)Enumerated Types are a special way of creating your own Type in C. The type is a "list of key words". 
+Enumerated types are used to make a program clearer to the reader/maintainer of the program. 
+
+enum week{ sunday, monday, tuesday, wednesday, thursday, friday, saturday}; 
+enum week today; 
+enum boolean{    false;    true;}; 
+enum boolean check; 
+enum month {JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,DEC}; 
+enum month rmonth; 
+enum compass_direction  {north,    east,    south,    west  }; 
+enum compass_direction my_direction; 
+enum planets  {Mercury,    Venus,    Earth,    Mars,    Jupiter,    Saturn,    Uranus,    Neptune,    Pluto  }; 
+enum planets planet1, planet2; 
+
+13)pointer dereference 
+The operator * is used to do this, and is called the dereferencing operator. 
+int a = 10; int* ptr = &a; printf("%d", *ptr); 
+// With *ptr I'm dereferencing the pointer. // Which means, I am asking the value pointed at by the pointer. 
+// ptr is pointing to the location in memory of the variable a. 
+Dereferencing Operation is performed to access or manipulate data contained in memory location pointed to by a pointer 
+
+14) inline vs macro 
+
+15) typedef vs macro 
+
+16) sections of code 
+
+17) storage types, application use cases
+      auto, register,static,extern
+ 
+18) for, do-while,while ===> decrement loop 
+
+19) optimization levels 
+
+20) volatile key word, const attribute
+ volatile is key word, tell to compiler do not do any optimization on this variable, whose value can vary dynamic, not in the program ,code control.
+
+21)difference between declaration  vs definition
+definition: type and memory allocation
+declaration: say somebody, some portion of code, it is defined, it says its data type.
